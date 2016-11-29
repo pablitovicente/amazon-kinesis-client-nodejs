@@ -1,5 +1,5 @@
 {
-  "name": "aws-kcl-custom-jar-dynamo-localhost",
+  "name": "aws-kcl",
   "description": "Kinesis Client Libray (KCL) in Node.js. Custom jar pointing to localhost",
   "version": "0.5.0",
   "author": {
