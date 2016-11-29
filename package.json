@@ -1,9 +1,9 @@
 {
-  "name": "aws-kcl",
-  "description": "Kinesis Client Libray (KCL) in Node.js.",
+  "name": "aws-kcl-custom-jar-dynamo-localhost",
+  "description": "Kinesis Client Libray (KCL) in Node.js. Custom jar pointing to localhost",
   "version": "0.5.0",
   "author": {
-    "name": "Amazon Web Services",
+    "name": "Amazon Web Services -modified by Pablo Vicente-",
     "url": "http://aws.amazon.com/"
   },
   "main": "index.js",
@@ -44,10 +44,10 @@
   "homepage": "https://github.com/awslabs/amazon-kinesis-client-nodejs",
   "repository": {
     "type": "git",
-    "url": "git://github.com/awslabs/amazon-kinesis-client-nodejs.git"
+    "url": "git://github.com/pablitovicente/amazon-kinesis-client-nodejs.git"
   },
   "bugs": {
-    "url": "https://github.com/awslabs/amazon-kinesis-client-nodejs/issues"
+    "url": "https://github.com/pablitovicente/amazon-kinesis-client-nodejs"
   },
   "licenses": [
     {
