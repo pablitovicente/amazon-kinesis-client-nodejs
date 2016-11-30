@@ -52,6 +52,8 @@ function bootstrap() {
     if (err) {
       errorExit(util.format('Unable to download Multi-Language Daemon jar files from maven: %s', err));
     }
+    fs.createReadStream('./node_modules/aws-kcl/lib/amazon-kinesis-client-1.2.0.jar')
+      .pipe(fs.createWriteStream( './node_modules/aws-kcl/lib/jars/amazon-kinesis-client-1.2.0.jar'));
     startKinesisClientLibraryApplication(args);
   });
 }
@@ -150,8 +152,6 @@ function downloadMavenPackage(mavenPackage, destinationDirectory, callback) {
       return;
     }
     httpDownloadFile(mavenPackageUrlInfo.url, destinationFile, 0, callback);
-    fs.createReadStream('./node_modules/aws-kcl/lib/amazon-kinesis-client-1.2.0.jar')
-        .pipe(fs.createWriteStream( './node_modules/aws-kcl/lib/jars/amazon-kinesis-client-1.2.0.jar'));
   });
 }
 
